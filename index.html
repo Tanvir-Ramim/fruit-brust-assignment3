@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fruit burst</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- for font -->
@@ -25,7 +25,7 @@
 
   <header class="md:container mx-auto w-11/12">
     <!-- nav section done -->
-    <div class="md:bg-[#F85559]  rounded-[600px] md:border mt-10">
+    <div class="md:bg-[#F85559]  lg:rounded-[600px] md:border mt-10">
       <div class="navbar-start md:w-0 w-auto  flex flex-row-reverse justify-between ">
         <div class="dropdown ">
           <label tabindex="0" class="btn btn-ghost  md:hidden ">
@@ -70,96 +70,99 @@
     </div>
     <!-- banner section -->
 
-    <div class="carousel w-full mt-10 relative ">
+    <div class="carousel w-full mt-10 relative rounded-md">
       <!-- 1st container -->
-      <div id="slide1" class="carousel-item  w-full relative bg-gradient-to-b from-[#121212] to-gray-400">
-        <div
-          class="absolute text-center space-y-3 md:space-y-6 lg:top-24 lg:left-[450px] top-3 left-[70px] md:top-12 md:left-[150px]">
-          <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
-            doorstep</h2>
-          <p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p>
-          <button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error  border-none  bg-[#f71418] ">Shop
-            Now</button>
+        <div id="slide1" class="carousel-item  w-full relative bg-gradient-to-b from-[#121212] to-gray-400">
+
+          <div class="absolute h-5/6 w-full text-center space-y-2 md:space-y-6 flex flex-col justify-center mt-4">
+
+           <div> <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
+            doorstep</h2></div>
+            <div><p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p></div>
+            <div><button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error  border-none  bg-[#f71418] ">Shop
+              Now</button></div>
+          </div>
+          <img src="./images/banner1.png" class="w-full  mix-blend-overlay " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle  bg-[#121212] border-none text-white ">❮</a>
+            <a href="#slide2" class="btn  btn-circle -p-10  bg-black border-none text-white">❯</a>
+          </div>
         </div>
-        <img src="./images/banner1.png" class="w-full  mix-blend-overlay" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle  bg-[#121212] border-none text-white ">❮</a>
-          <a href="#slide2" class="btn btn-circle  bg-black border-none text-white">❯</a>
+        <!-- 2nd container -->
+        <div id="slide2" class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-gray-400">
+          <div
+            class="absolute text-center space-y-3 md:space-y-6 lg:top-24 lg:left-[450px] top-3 left-[70px] md:top-12 md:left-[150px]">
+            <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
+              doorstep</h2>
+            <p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p>
+            <button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error border-none bg-[#f71418] ">Shop
+              Now</button>
+          </div>
+          <img src="./images/banner2.png" class="w-full mix-blend-overlay" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle  bg-black border-none text-white">❮</a>
+            <a href="#slide3" class="btn btn-circle  bg-black border-none text-white">❯</a>
+          </div>
         </div>
-      </div>
-      <!-- 2nd container -->
-      <div id="slide2" class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-gray-400">
-        <div
-          class="absolute text-center space-y-3 md:space-y-6 lg:top-24 lg:left-[450px] top-3 left-[70px] md:top-12 md:left-[150px]">
-          <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
-            doorstep</h2>
-          <p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p>
-          <button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error border-none bg-[#f71418] ">Shop
-            Now</button>
+        <!-- 3rd -->
+        <div id="slide3" class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-gray-400">
+          <div
+            class="absolute text-center space-y-3 md:space-y-6 lg:top-24 lg:left-[450px] top-3 left-[70px] md:top-12 md:left-[150px]">
+            <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
+              doorstep</h2>
+            <p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p>
+            <button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error border-none bg-[#f71418]">Shop
+              Now</button>
+          </div>
+          <img src="./images/banner3.png" class="w-full mix-blend-overlay" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle  bg-black border-none text-white">❮</a>
+            <a href="#slide4" class="btn btn-circle  bg-black border-none text-white">❯</a>
+          </div>
         </div>
-        <img src="./images/banner2.png" class="w-full mix-blend-overlay" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle  bg-black border-none text-white">❮</a>
-          <a href="#slide3" class="btn btn-circle  bg-black border-none text-white">❯</a>
+        <!-- 4ht -->
+        <div id="slide4" class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-gray-400">
+          <div
+            class="absolute text-center space-y-3 md:space-y-6 lg:top-24 lg:left-[450px] top-3 left-[70px] md:top-12 md:left-[150px]">
+            <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
+              doorstep</h2>
+            <p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p>
+            <button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error border-none bg-[#f71418] ">Shop
+              Now</button>
+          </div>
+          <img src="./images/banner4.png" class="w-full mix-blend-overlay" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle  bg-black border-none text-white">❮</a>
+            <a href="#slide1" class="btn btn-circle  bg-black border-none text-white">❯</a>
+          </div>
         </div>
-      </div>
-      <!-- 3rd -->
-      <div id="slide3" class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-gray-400">
-        <div
-          class="absolute text-center space-y-3 md:space-y-6 lg:top-24 lg:left-[450px] top-3 left-[70px] md:top-12 md:left-[150px]">
-          <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
-            doorstep</h2>
-          <p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p>
-          <button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error border-none bg-[#f71418]">Shop
-            Now</button>
-        </div>
-        <img src="./images/banner3.png" class="w-full mix-blend-overlay" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle  bg-black border-none text-white">❮</a>
-          <a href="#slide4" class="btn btn-circle  bg-black border-none text-white">❯</a>
-        </div>
-      </div>
-      <!-- 4ht -->
-      <div id="slide4" class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-gray-400">
-        <div
-          class="absolute text-center space-y-3 md:space-y-6 lg:top-24 lg:left-[450px] top-3 left-[70px] md:top-12 md:left-[150px]">
-          <h2 class="text-white md:text-5xl lg:text-7xl text-lg text-center font-extrabold">Exotic tastes at your <br>
-            doorstep</h2>
-          <p class="font-medium  lg:text-xl text-white">We supply highly quality organic products</p>
-          <button class=" md:p-3 rounded-md p-1 md:w-auto  text-white btn-error border-none bg-[#f71418] ">Shop
-            Now</button>
-        </div>
-        <img src="./images/banner4.png" class="w-full mix-blend-overlay" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle  bg-black border-none text-white">❮</a>
-          <a href="#slide1" class="btn btn-circle  bg-black border-none text-white">❯</a>
-        </div>
-      </div>
+       
       <!-- relative section -->
+      
     </div>
     <div
-      class="hidden max-w-7xl mx-auto bg-white shadow-md lg:flex justify-between rounded-md gap-48 p-5 -mt-20 absolute ml-[120px]  ">
-      <div class="text-center">
-        <img src="./images/fruit1.png" alt="">
-        <p>Strawberry</p>
-      </div>
-      <div class="text-center">
-        <img src="./images/fruit2.png" alt="">
-        <p>Orange</p>
-      </div>
-      <div class="text-center">
-        <img src="./images/fruit3.png" alt="">
-        <p>Mango</p>
-      </div>
-      <div class="text-center">
-        <img src="./images/fruit4.png" alt="">
-        <p>Strawberry</p>
-      </div>
-      <div class="text-center">
-        <img src="./images/fruit5.png" alt="">
-        <p>Mango</p>
-      </div>
+    class="hidden w-2/3   bg-white shadow-md lg:flex justify-between rounded-md  p-5  absolute translate-x-36 -translate-y-24">
+    <div class="text-center">
+      <img src="./images/fruit1.png" alt="">
+      <p>Strawberry</p>
     </div>
+    <div class="text-center">
+      <img src="./images/fruit2.png" alt="">
+      <p>Orange</p>
+    </div>
+    <div class="text-center">
+      <img src="./images/fruit3.png" alt="">
+      <p>Mango</p>
+    </div>
+    <div class="text-center">
+      <img src="./images/fruit4.png" alt="">
+      <p>Strawberry</p>
+    </div>
+    <div class="text-center">
+      <img src="./images/fruit5.png" alt="">
+      <p>Mango</p>
+    </div>
+  </div>
   </header>
   <!-- main section -->
   <main>
@@ -422,8 +425,8 @@
     </div>
 
     <!-- meet section -->
-       <section class="md:container mx-auto w-11/12 md:mt-20 lg:mt-32 mt-10">
-        <div class="bg-no-repeat relative bg-cover flex justify-center  " style="background-image: url('./images/team.png');">
+       <section class="md:container mx-auto w-11/12 md:mt-20 lg:mt-32 mt-10 ">
+        <div class="bg-no-repeat relative bg-cover flex justify-center  rounded-md " style="background-image: url('./images/team.png');">
           <div class="rounded-xl absolute inset-0 bg-[#121212B2] bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="lg:p-28 space-y-12 mt-4 ">
@@ -692,7 +695,7 @@
                   </div>
               </div>
                  <!-- right-->
-                 <div class="space-y-10 lg:border-none  md:border-l border-black md:mt-0 mt-10">
+                 <div class="space-y-10 lg:border-none  md:border-l border-black md:mt-0 mt-10 md:pl-4">
                   <div class="lg:flex flex flex-col lg:flex-row-reverse  gap-6 lg:text-right text-center items-center lg:items-start">  
                     <div class="bg-[#1212121A] rounded-full w-[60px] h-[60px] flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -766,9 +769,53 @@
         </section>
   </main>
   <!-- footer section -->
-  <footer>
-
-
+  <footer class="min-h-[400px] bg-black lg:mt-40 mt-10 flex flex-col items-center justify-center space-y-9">
+      <div class="  flex items-center gap-2">
+        <img class="w-12" src="./images/logo.png" alt="">
+        <span class="text-4xl text-white font-bold">Fruit Burst</span>
+      </div>
+           
+      <div class="flex flex-wrap md:gap-16 gap-10 justify-center">
+        <p class="text-white text-lg">Home</p>
+        <p class="text-white text-lg">About Us</p>
+        <p class="text-white text-lg">Shop</p>
+        <p class="text-white text-lg">All Fruits</p>
+        <p class="text-white text-lg">Support</p>
+        <p class="text-white text-lg">My Account</p>
+      </div>
+  
+      <div class="flex md:gap-12 gap-7  items-center">
+        <div class="text-white text-[35px]"><i class="fa-brands fa-twitter"></i></div>
+       <div>
+        <svg width="35" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_13_2378)">
+          <path d="M40 20C40 29.9828 32.6859 38.257 23.125 39.757V25.7813H27.7852L28.6719 20H23.125V16.2484C23.125 14.6664 23.9 13.125 26.3844 13.125H28.9062V8.20313C28.9062 8.20313 26.6172 7.8125 24.4289 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7813H16.875V39.757C7.31406 38.257 0 29.9828 0 20C0 8.95469 8.95469 0 20 0C31.0453 0 40 8.95469 40 20Z" fill="white"/>
+          <path d="M27.7852 25.7812L28.6719 20H23.125V16.2484C23.125 14.6667 23.8998 13.125 26.3843 13.125H28.9062V8.20312C28.9062 8.20312 26.6175 7.8125 24.4293 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7812H16.875V39.757C17.8933 39.9167 18.9369 40 20 40C21.0631 40 22.1067 39.9167 23.125 39.757V25.7812H27.7852Z" fill="#1877F2"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_13_2378">
+          <rect width="40" height="40" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+       </div>
+       <div>
+        <svg width="38" height="38" viewBox="0 0 58 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M55.9526 6.25899C55.294 3.81162 53.3644 1.88249 50.9175 1.22347C46.4468 0 28.5643 0 28.5643 0C28.5643 0 10.6821 0 6.21148 1.17683C3.81162 1.83542 1.83498 3.81206 1.17639 6.25899C0 10.7292 0 20 0 20C0 20 0 29.3174 1.17639 33.741C1.83542 36.1879 3.76455 38.1175 6.21192 38.7765C10.7292 40 28.5647 40 28.5647 40C28.5647 40 46.4468 40 50.9175 38.8232C53.3649 38.1646 55.294 36.235 55.953 33.7881C57.1294 29.3174 57.1294 20.0471 57.1294 20.0471C57.1294 20.0471 57.1765 10.7292 55.9526 6.25899Z" fill="white"/>
+          <path d="M22.8706 28.5648L37.7409 20.0001L22.8706 11.4354V28.5648Z" fill="#FF0000"/>
+          </svg>
+       </div>
+       <div class="text-white text-[35px]">
+        <i class="fa-brands fa-linkedin-in"></i>
+       </div>
+       <div class="text-white text-[36px]">
+        <i class="fa-brands fa-instagram"></i>
+       </div>
+       <div class="text-white text-[36px]">
+        <i class="fa-brands fa-apple"></i>
+       </div>
+      </div>
+        
   </footer>
 </body>
 
